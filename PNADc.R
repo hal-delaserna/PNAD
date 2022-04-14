@@ -85,7 +85,7 @@ for (ano in 2018:2020) {
       year = ano,
       quarter = trimestre,
       vars = variaveis,
-      savedir = "D:/Users/humberto.serna/Documents/CSV_Data"
+      savedir = "D:/Users/humberto.serna/Documents/D_Lake"
       )
     }}
 
@@ -113,10 +113,10 @@ PNADC_2020_1T <-
   pnadc_design(
     pnadc_labeller(
     data_pnadc = read_pnadc(
-      microdata = paste(getwd(), "/CSV_Data/PNAD/microdados/", arquivos[3], sep = ""),
+      microdata = paste(getwd(), "/D_Lake/PNAD/microdados/", arquivos[3], sep = ""),
       input_txt = paste(
         getwd(),
-        "/CSV_Data/PNAD/microdados/",
+        "/D_Lake/PNAD/microdados/",
         "input_PNADC_trimestral.txt",
         sep = ""
       ),
@@ -124,7 +124,7 @@ PNADC_2020_1T <-
     ),
     dictionary.file = paste(
       getwd(),
-      "/CSV_Data/PNAD/microdados/",
+      "/D_Lake/PNAD/microdados/",
       "dicionario_PNADC_microdados_trimestral.xls",
       sep = ""
     )))
@@ -134,10 +134,10 @@ PNADC_2020_1T <-
   pnadc_design(
     pnadc_labeller(
       data_pnadc = read_pnadc(
-        microdata = paste(getwd(), "/CSV_Data/PNAD/microdados/", arquivos[6], sep = ""),
+        microdata = paste(getwd(), "/D_Lake/PNAD/microdados/", arquivos[6], sep = ""),
         input_txt = paste(
           getwd(),
-          "/CSV_Data/PNAD/microdados/",
+          "/D_Lake/PNAD/microdados/",
           "input_PNADC_trimestral.txt",
           sep = ""
         ),
@@ -145,7 +145,7 @@ PNADC_2020_1T <-
       ),
       dictionary.file = paste(
         getwd(),
-        "/CSV_Data/PNAD/microdados/",
+        "/D_Lake/PNAD/microdados/",
         "dicionario_PNADC_microdados_trimestral.xls",
         sep = ""
       )))
